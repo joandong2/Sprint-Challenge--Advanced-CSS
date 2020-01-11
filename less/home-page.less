@@ -1,6 +1,6 @@
 // Home Content
 
-header {
+.navigation {
     background-color: @wild-sand;
     padding: 10px;
 
@@ -125,6 +125,45 @@ header {
         height: auto;
         border-radius: 10px;
       }
+    }
+  }
+
+  .newsletter {
+
+    border-top: 1px solid @main-border-color;
+    padding: 20px 15px 0;
+    margin-bottom: 50px;
+
+    @media @phone {
+        margin-bottom: 30px;
+    }
+
+    .newsletter-form {
+        margin: 15px 0;
+        .flex(space-between, flex-start, wrap, @direction: row);
+
+        @media @phone {
+            .flex(flex-start, flex-start, wrap, @direction: column);
+        }
+
+        input {
+            width: 32.3333%;
+            border: 1px solid @btn-bg-color;
+            border-radius: 4px;
+            background-color: @clear;
+            padding: 10px;
+
+            &[type=submit] {
+                background-color: @btn-bg-color; 
+                color: @clear;
+                font-size: 1.4rem;
+                font-weight: 600;
+            }
+
+            @media @phone {
+                width: 100%;
+            }
+        }
     }
   }
 }// home
