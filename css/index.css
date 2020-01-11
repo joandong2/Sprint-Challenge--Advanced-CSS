@@ -284,6 +284,11 @@ footer {
   text-align: center;
   font-size: 2rem;
 }
+.home .walk .walk-text .btn:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
+  border: 1px solid #22283A;
+}
 @media (max-width: 500px) {
   .home .walk .walk-text .btn {
     width: 100%;
@@ -355,6 +360,12 @@ footer {
   color: #FFFFFF;
   font-size: 1.4rem;
   font-weight: 600;
+  cursor: pointer;
+}
+.home .newsletter .newsletter-form input[type=submit]:hover {
+  background-color: #FFFFFF;
+  color: #22283A;
+  border: 1px solid #22283A;
 }
 @media (max-width: 500px) {
   .home .newsletter .newsletter-form input {
