@@ -203,7 +203,7 @@ footer {
 .home .intro img {
   border-radius: 5px;
 }
-@media (max-width: 500px) {
+@media (max-width: 960px) {
   .home .intro img {
     width: 100%;
   }
