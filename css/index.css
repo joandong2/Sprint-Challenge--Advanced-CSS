@@ -163,7 +163,18 @@ p {
   width: 100%;
   margin: 0 auto;
 }
-nav {
+.navigation {
+  background-color: #F6F6F6;
+  padding: 10px;
+}
+.navigation .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.navigation .container nav {
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -172,7 +183,7 @@ nav {
   flex-wrap: nowrap;
   flex-direction: row;
 }
-nav a {
+.navigation .container nav a {
   margin: 0 10px;
   color: #23293B;
   text-decoration: none;
@@ -188,17 +199,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.navigation {
-  background-color: #F6F6F6;
-  padding: 10px;
-}
-.navigation .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .home .intro img {
   border-radius: 5px;
