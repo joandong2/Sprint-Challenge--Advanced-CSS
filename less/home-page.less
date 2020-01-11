@@ -15,6 +15,10 @@ header {
 
     img {
         border-radius: 5px;
+
+        @media @phone {
+            width: 100%;
+        }
     }
 
     h2 {
@@ -37,6 +41,20 @@ header {
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+        @media @phone {
+            width: 88%;
+            margin: 10px auto;
+        }
+        
+        &:nth-child(2),
+        &:last-child {
+
+            @media @phone {
+                display: none;
+            }
+        }
+
     }
   }
 
@@ -59,6 +77,12 @@ header {
     display: flex;
     justify-content: center;
 
+    @media @phone {
+        margin-top: 20px;
+        padding: 15px;
+        .flex(center, @direction: column-reverse);
+    }
+
     .walk-text {
       width: 50%;
 
@@ -72,12 +96,29 @@ header {
 
       .btn {
           .button(@btn-bg-color, 5px, @sea-shell);
+
+          @media @phone {
+              width: 100%;
+              padding: 20px;
+              .flex(center, center, wrap, row);
+          }
       }
+
+      @media @phone {
+          width: 100%;
+      }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+          width: 100%;
+          margin-left: 0;
+          margin-bottom: 20px;
+      }
       
       img {
         width: 100%;
